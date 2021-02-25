@@ -1,2 +1,2 @@
 # SolViz
-<img src="files/workflow.png">
+<img src="workflow.png">
