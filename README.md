@@ -5,7 +5,7 @@
 This code takes data from Honeybee pickled files containing solar hourly energy generation per each module and extracts statistics, 3D graphs, plots, etc.
 
 ## Source input
-* a pickled dataframe containing hourly data for solar production of each module on building envelopes, obtained by tassellation of built surface. Such data can be obtained, given a 3D geometry input, via a [Honeybee](https://www.ladybug.tools/honeybee.html) Radiance+Daysim based workflow in [Rhino Grasshopper](https://www.grasshopper3d.com/), such as [this one](http://hydrashare.github.io/hydra/viewer?owner=mostaphaRoudsari&fork=hydra_1&id=Honeybee_Annual_Daylight_Simulation_Example&slide=0&scale=1&offset=0,0). The dataframe should look like this (shape: 8760 x n) :
+* a pickled dataframe containing hourly data for solar production of each module on building envelopes, obtained by tassellation of built surface. Such data can be obtained, given a 3D geometry input, via a [Honeybee](https://www.ladybug.tools/honeybee.html) Radiance+Daysim based workflow in [Rhino Grasshopper](https://www.grasshopper3d.com/), such as [this one](http://hydrashare.github.io/hydra/viewer?owner=mostaphaRoudsari&fork=hydra_1&id=Honeybee_Annual_Daylight_Simulation_Example&slide=0&scale=1&offset=0,0). The dataframe should look like this (shape: 8760 x n):
 
 | datetime            |   0 |   1 |   2 |   3 |   4 |
 |---------------------|-----|-----|-----|-----|-----|
@@ -20,7 +20,7 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 | 2005-01-01 13:05:00 |  11 |  11 |  11 |  11 |  11 |
 | 2005-01-01 14:05:00 |   9 |   9 |   9 |   9 |   8 |
 
-* a dataframe containing the coordinates of each module's vertices (1st vert, 2nd vert, 3rd vert, 4th vert, 1st vert to close the polyline), and the index of the building, row, position in a row it belongs to. The dataframe should look like this (shape: n x 7)
+* a dataframe containing the coordinates of each module's vertices (1st vert, 2nd vert, 3rd vert, 4th vert, 1st vert to close the polyline), and the index of the building, row, position in a row it belongs to. Such data can be obtained from [Rhino Grasshopper](https://www.grasshopper3d.com/) opportune manipulation. The dataframe should look like this (shape: n x 7):
 
 |    |   BLDGID |   SRFID |   ROWID |   PANELID | PANELCOORDINATES                                                                                                                                                | ROOF T/F   |
 |----|----------|---------|---------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
@@ -29,6 +29,9 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 |  2 |  1013643 |       0 |       3 |         0 | -20.758788 30.561514 429.779342 -21.301708 29.380315 429.782089 -20.574733 29.046998 430.137099 -20.031813 30.228197 430.134352 -20.758788 30.561514 429.779342 | True       |
 |  3 |  1013643 |       0 |       3 |         1 | -21.485764 30.894833 429.4243 -22.028684 29.713634 429.427047 -21.30171 29.380317 429.782058 -20.75879 30.561515 429.779311 -21.485764 30.894833 429.4243       | True       |
 |  4 |  1013643 |       1 |       1 |         0 | -19.10557 28.377467 429.602967 -18.562648 29.558665 429.60022 -19.271384 29.885347 429.995942 -19.814307 28.704149 429.99869 -19.10557 28.377467 429.602967     | True       |
+
+## Output
+{% include interact.html %}
 
 ## Requirements
 Python 3.x with the following libraries:
