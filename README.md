@@ -31,7 +31,8 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 |  4 |  1013643 |       1 |       1 |         0 | -19.10557 28.377467 429.602967 -18.562648 29.558665 429.60022 -19.271384 29.885347 429.995942 -19.814307 28.704149 429.99869 -19.10557 28.377467 429.602967     | True       |
 
 ## Output
-[click](vertragus.github.io/SolViz/docs/interact.html)
+[click](https://vertragus.github.io/SolViz/)
+{% include interact.html %}
 
 ## Requirements
 Python 3.x with the following libraries:
