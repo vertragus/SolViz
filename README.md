@@ -1,5 +1,5 @@
 # SolViz
-<img src="workflow.png">
+<img src="teaser.png">
 
 ## Purpose
 This code takes data from Honeybee pickled files containing solar hourly energy generation per each module and extracts statistics, 3D graphs, plots, etc.
@@ -53,3 +53,6 @@ Python 3.x with the following libraries:
 * seaborn
 * plotly
 * descartes
+
+## Schematic Workflow
+<img src="workflow.png">
