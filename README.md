@@ -42,7 +42,10 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 
 
 ## Output
-[click](https://vertragus.github.io/SolViz/)
+* 2d map of PV production per building
+<img src="docs/2dplan.png">
+* [3d map](https://vertragus.github.io/SolViz/) of PV production per module
+* various statistics about energy needs, energy production, load match, etc.: check [`SolViz stats.ipynb`](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb)
 
 ## Requirements
 Python 3.x with the following libraries:
