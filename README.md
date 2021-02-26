@@ -40,12 +40,30 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 | 3 | 0.804112 | True       |
 | 4 | 1.03443  | True       |
 
+* an output dataframe from [CitySim](http://www.kaemco.ch/download.php), which contains several columns, the first featuring the timestep, the others a series of variables relative to each building as a thermal zone, for example the indoor temperature, the heating and the cooling needs. The dataframe should have shape 8760 x n x m with m number of variables calculated by CitySim per each building
+```
+'#timeStep',
+ '1(1):10:Ta(celsius)',
+ '1(1):10:Heating(Wh)',
+ '1(1):10:Cooling(Wh)',
+ '1(1):10:Qi(Wh)',
+ '1(1):10:Qs(Wh)',
+ '1(1):10:VdotVent(m³/h)',
+ '1(1):HeatStockTemperature(celsius)',
+ '1(1):DHWStockTemperature(celsius)',
+ '1(1):ColdStockTemperature(celsius)',
+ '1(1):MachinePower(W)',
+ '1(1):FuelConsumption(MJ)',
+ '1(1):ElectricConsumption(kWh)',
+ '1(1):SolarPVProduction(kWh)',
+ '1(1):SolarThermalProduction(Wh)',
+ ```
 
 ## Output
 * 2d map of PV production per building
 <img src="docs/2dplan.png">
 * [3d map](https://vertragus.github.io/SolViz/) of PV production per module
-* various statistics about energy needs, energy production, load match, etc.: check [`SolViz stats.ipynb`](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb)
+* various statistics about energy needs, energy production, load match, etc.: check [SolViz stats.ipynb](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb)
 
 ## Requirements
 Python 3.x with the following libraries:
@@ -56,6 +74,10 @@ Python 3.x with the following libraries:
 * seaborn
 * plotly
 * descartes
+
+## Usage
+* First use the [Read_PD_pickle.ipynb](https://github.com/vertragus/SolViz/blob/main/Read_PD_pickle.ipynb) notebook to analyse the input, nest them in the tree structure and create both the 2d and 3d maps
+* Use the [SolViz stats.ipynb](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb) notebook to plot the statistics. Beware some variables are context sensitive and were built for the specific case of Geneva
 
 ## Schematic Workflow
 <img src="workflow.png">
