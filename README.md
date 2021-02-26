@@ -30,9 +30,19 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 |  3 |  1013643 |       0 |       3 |         1 | -21.485764 30.894833 429.4243 -22.028684 29.713634 429.427047 -21.30171 29.380317 429.782058 -20.75879 30.561515 429.779311 -21.485764 30.894833 429.4243       | True       |
 |  4 |  1013643 |       1 |       1 |         0 | -19.10557 28.377467 429.602967 -18.562648 29.558665 429.60022 -19.271384 29.885347 429.995942 -19.814307 28.704149 429.99869 -19.10557 28.377467 429.602967     | True       |
 
+* a dataframe containing the Visual Amplitude values per each module. Such dataframe can be built in [Rhino Grasshopper](https://www.grasshopper3d.com/) using the [Solid Angle](https://github.com/vertragus/hydra/tree/master/Solid_Angle) component and the [Visual Amplitude](https://github.com/vertragus/hydra/tree/master/visual_amplitude) component, after having set-up a grid of viewpoints on roads or sidewalks using the [Medial Axis](https://github.com/vertragus/hydra/tree/master/medial_axis) component. The dataframe should look like this (shape: n x 2):
+
+|                    |       AV | ROOF T/F   |
+|--------------------|----------|------------|
+| 0 | 0.800298 | True       |
+| 1 | 0.800432 | True       |
+| 2 | 0.803987 | True       |
+| 3 | 0.804112 | True       |
+| 4 | 1.03443  | True       |
+
+
 ## Output
 [click](https://vertragus.github.io/SolViz/)
-{% include interact.html %}
 
 ## Requirements
 Python 3.x with the following libraries:
