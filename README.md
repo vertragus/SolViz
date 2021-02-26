@@ -62,8 +62,9 @@ This code takes data from Honeybee pickled files containing solar hourly energy 
 ## Output
 * 2d map of PV production per building
 <img src="docs/2dplan.png">
+
 * [3d map](https://vertragus.github.io/SolViz/) of PV production per module
-* various statistics about energy needs, energy production, load match, etc.: check [SolViz stats.ipynb](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb)
+* various statistics about energy needs, energy production, load match, etc.: check [`SolViz stats.ipynb`](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb)
 
 ## Requirements
 Python 3.x with the following libraries:
@@ -76,8 +77,8 @@ Python 3.x with the following libraries:
 * descartes
 
 ## Usage
-* First use the [Read_PD_pickle.ipynb](https://github.com/vertragus/SolViz/blob/main/Read_PD_pickle.ipynb) notebook to analyse the input, nest them in the tree structure and create both the 2d and 3d maps
-* Use the [SolViz stats.ipynb](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb) notebook to plot the statistics. Beware some variables are context sensitive and were built for the specific case of Geneva
+* First use the [`Read_PD_pickle.ipynb`](https://github.com/vertragus/SolViz/blob/main/Read_PD_pickle.ipynb) notebook to analyse the input, nest them in the tree structure and create both the 2d and 3d maps
+* Use the [`SolViz stats.ipynb`](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb) notebook to plot the statistics. Beware some variables are context sensitive and were built for the specific case of Geneva
 
 ## Schematic Workflow
 <img src="workflow.png">
