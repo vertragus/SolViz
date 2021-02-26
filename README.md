@@ -78,6 +78,7 @@ Python 3.x with the following libraries:
 
 ## Usage
 * First use the [`Read_PD_pickle.ipynb`](https://github.com/vertragus/SolViz/blob/main/Read_PD_pickle.ipynb) notebook to analyse the input, nest them in the tree structure and create both the 2d and 3d maps
+* Check the CitySim output with the [`Read CitySim Out.ipynb`](https://github.com/vertragus/SolViz/blob/main/Read%20CitySim%20Out.ipynb) notebook
 * Use the [`SolViz stats.ipynb`](https://github.com/vertragus/SolViz/blob/main/SolViz%20stats.ipynb) notebook to plot the statistics. Beware some variables are context sensitive and were built for the specific case of Geneva
 
 ## Schematic Workflow
